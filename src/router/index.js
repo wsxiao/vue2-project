@@ -10,14 +10,37 @@ import CheckedBoxDemo from '@/pages/checkedBoxDemo'
 import RadioBox from '@/pages/radioBox'
 import SelectDemo from '@/pages/selectDemo'
 import ComponentDemo from '@/pages/componentDemo'
-import CustomInstructions from '@/pages/customInstructions'
+
+/**
+ * caicai module
+ * */
+import IndexComponent from '@/pages/Cindex'
+import AboutUsComponent from '@/pages/CaboutsUs'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    // 默认路由，用户敲完域名的默认页面
+    /**
+     * caicai module
+     * */
     {
       path: '/',
+      name: 'index',
+      component: IndexComponent
+    },
+    {
+      path:'/aboutUs',
+      name:'about-us',
+      component:AboutUsComponent
+    },
+
+
+
+
+    {
+      path: '/helloWorld',
       name: 'HelloWorld',
       component: HelloWorld
     },
@@ -66,10 +89,6 @@ export default new Router({
       name:'componentDemo',
       component:ComponentDemo
     },
-    {
-      path:'/customInstructions',
-      name:'customInstructions',
-      component:CustomInstructions
-    }
+
   ]
 })

@@ -6,7 +6,7 @@
       <br>
       <br>
       <ol>
-        <todo-item v-for="item in sites" :todo="item"></todo-item>
+        <!--<todo-item v-for="item in sites" :todo="item"></todo-item>-->
       </ol>
 
       <div>

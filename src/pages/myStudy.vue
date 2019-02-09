@@ -6,7 +6,7 @@
         <th>商品名称</th>
         <th>商品价格</th>
         <th>购买数量</th>
-        <th>操作</th>
+        <th>操作 </th>
       </tr>
       <tr v-for="iphone in IP_Json">
         <td>{{iphone.id}}</td>
@@ -31,7 +31,6 @@
     <button @click="RadioBox">单选框</button>
     <button @click="selectDemo">列表选择</button>
     <button @click="componentDemo">组件Demo</button>
-    <button @click="customInstructions">自定义指令</button>
   </div>
 </template>
 
@@ -114,11 +113,6 @@
         componentDemo:function () {
           this.$router.push({
             name:'componentDemo'
-          })
-        },
-        customInstructions:function () {
-          this.$router.push({
-            name:'customInstructions'
           })
         }
       }

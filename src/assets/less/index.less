@@ -1,0 +1,97 @@
+@import "./variables.less";
+
+.main-content {
+  background-color: #fff;
+  .header-top {
+    padding: 0.1rem 0.3rem;
+    overflow: hidden;
+    .header-logo-box {
+      .logo-img {
+        width: 50%;
+        display: inline-block;
+      }
+    }
+    .header-menu-box {
+      display: inline-block;
+      //float: right;
+      margin-top: 0.2rem;
+      font-size: 0.12rem;
+      font-weight: 500;
+      text-align: right;
+      .logo-text {
+        font-size: 13px;
+        color: #999;
+        text-align: right;
+        width: 100%;
+        display: inline-block;
+      }
+      .menu-item {
+        display: inline-block;
+        width: 0.8rem;
+        text-align: center;
+        cursor: pointer;
+        .menu-item-border {
+          display: inline-block;
+          width: 100%;
+          position: relative;
+          text-align: center;
+          .sanjiao {
+            position: absolute;
+            top: -6px;
+            left: calc(50% - 5px);
+            border: 6px solid @main-color;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            transform: rotate(-45deg);
+          }
+        }
+        .menu-item-border8373ce {
+          border-top: 2px solid #8373ce;
+        }
+        .menu-item-borderf8b54d {
+          border-top: 2px solid #f8b54d;
+        }
+        .menu-item-borderffc5b4e {
+          border-top: 2px solid #fc5b4e;
+        }
+        .menu-item-border35a3f0 {
+          border-top: 2px solid #35a3f0;
+        }
+        .menu-text {
+          display: inline-block;
+          margin-top: 0.2rem;
+        }
+      }
+    }
+  }
+  #carousel {
+    .carousel-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .header-footer {
+    box-sizing: border-box;
+    padding: 0.2rem;
+    width: 100%;
+    text-align: center;
+    .footer-content {
+      border: 1px solid @main-color;
+      width: 50%;
+      display: inline-block;
+      height: auto;
+      text-align: text;
+      color: #999;
+      border-radius: 0.4rem;
+      padding: 0.05rem;
+      box-sizing: border-box;
+      img {
+        width: 0.4rem;
+        border-left: 1px solid #efefef;
+        margin-left:0.14rem;
+      }
+    }
+  }
+
+}
+

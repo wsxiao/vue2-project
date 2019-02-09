@@ -15,10 +15,16 @@ exports.assetsPath = function (_path) {
 exports.cssLoaders = function (options) {
   options = options || {}
 
+  /**
+   * 配置了全局变量，在这里修改全局变量的路径 - DKing
+   * */
   const cssLoader = {
     loader: 'css-loader',
     options: {
-      sourceMap: options.sourceMap
+      // sourceMap: options.sourceMap
+      resources: [
+        path.resolve(__dirname, '../src/assets/less/variables.less'), //定义全局变量的文件路径
+      ]
     }
   }
 
